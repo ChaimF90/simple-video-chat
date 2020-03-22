@@ -101,14 +101,14 @@ function App() {
   let UserVideo;
   if (stream) {
     UserVideo = (
-      <Video muted ref={userVideo} autoPlay />
+      <Video playsInline muted ref={userVideo} autoPlay />
     );
   }
 
   let PartnerVideo;
   if (callAccepted) {
     PartnerVideo = (
-      <Video ref={partnerVideo} autoPlay />
+      <Video playsInline ref={partnerVideo} autoPlay />
     );
   }
 
